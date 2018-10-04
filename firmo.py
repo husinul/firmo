@@ -32,9 +32,12 @@ def show_banner():
 
 def choose_tool():
     
-    input("[?] which tool you want to use ?\n1.binwalk\n2.firmdyne")
-    if sys.argv[1] =='':
-       #binwalk.scan()
+    data=input("[?] which tool you want to use ?\n1.binwalk\n2.firmdyne\n>>")
+    if data == 1:
+        print("welcome to Binwalk .......\n")
+        binwalk_extractor(firm_name)
+    elif data =2:
+
 
 def get_info():
     if len(sys.argv) == 2:
@@ -117,9 +120,9 @@ def final_run(image_id):
 
 def main():
     show_banner()
-    #choose_tool()
+    choose_tool()
     firm_name, firm_brand = get_info()
-    binwalk = binwalk_extractor(firm_name)
+    #binwalk = binwalk_extractor(firm_name)
     image_id = run_extractor(firm_name, firm_brand)
    
     if image_id == "":
