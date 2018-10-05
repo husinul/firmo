@@ -10,7 +10,7 @@ Firmo is a toolkit built in order to help security researchers analyze and ident
 
 ---
 
-Firmware Analysis Toolkit is build on top of the following existing tools and projects : 
+Firmo is build on top of the following existing tools and projects : 
 
 1. [Firmadyne](https://github.com/firmadyne/firmadyne)
 2. [Binwalk](https://github.com/devttys0/binwalk) 
