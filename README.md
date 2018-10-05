@@ -7,6 +7,7 @@ Firmo is a toolkit built in order to help security researchers analyze and ident
 **Note:** 
 
 + As of now, it is simply a script to automate.
+currently under development, more tools are to be added soon...
 
 ---
 
