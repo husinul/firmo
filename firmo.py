@@ -117,7 +117,7 @@ def main():
         try:
             if data == 1:
                 binwalk_extractor(firm_name)
-                d=input('do u wanna use another ?')
+                d=input('>> do u wanna use another ?')
             elif data == 2:    
                 image_id = run_extractor(firm_name, firm_brand)
                 if image_id == "":
