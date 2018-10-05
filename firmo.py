@@ -47,7 +47,7 @@ def binwalk_extractor(firm_name):
 def run_extractor(firm_name, firm_brand):
     print("[+] Now going to extract the firmware. Hold on..")
     print("[+] Firmware : " + firm_name)
-    print("[+] Brand : " + firm_brand)
+    print("[+] Brand : " + firm_brand)    
     extractor_cmd = firmadyne_path + "/sources/extractor/extractor.py -b " + firm_brand + " -sql 127.0.0.1 -np -nk " + "\""+ firm_name + "\"" + " images "
     child = pexpect.spawn(extractor_cmd, timeout=None)
     child.expect("Database Image ID: ")
@@ -112,20 +112,30 @@ def main():
     show_banner()
     
     firm_name, firm_brand = get_info()
-    data = int(input("[?] which tool you want to use ?\n1.binwalk\n2.firmdyne\n>>"))
-    if data == 1:
-        binwalk_extractor(firm_name)
-    elif data == 2:    
-        image_id = run_extractor(firm_name, firm_brand)
-        if image_id == "":
-            print("[!] Something went wrong")
-        else:
-            arch = identify_arch(image_id)        
-            tar2db(image_id)
-            make_image(arch, image_id)        
-            setup_network(arch, image_id)        
-            final_run(image_id)
-
+    while True:
+        data = int(input("[?] which tool you want to use ?\n1.Binwalk\n2.Firmdyne\n3.Exit\n>>"))
+        try:
+            if data == 1:
+                binwalk_extractor(firm_name)
+                d=input('do u wanna use another ?')
+            elif data == 2:    
+                image_id = run_extractor(firm_name, firm_brand)
+                if image_id == "":
+                    print("[!] Something went wrong")
+                else:
+                    arch = identify_arch(image_id)        
+                    tar2db(image_id)
+                    make_image(arch, image_id)        
+                    setup_network(arch, image_id)        
+                    final_run(image_id)
+            elif data ==3:
+                break
+            else:
+                raise  ValueError()       
+        except ValueError:
+            print("Oops!  That was no valid number.  Try again...")
+            
+            
 
 if __name__ == "__main__":
     main()
