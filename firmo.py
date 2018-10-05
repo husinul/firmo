@@ -29,16 +29,6 @@ def show_banner():
                   By Husinul Sanub
     """)
 
-
-def choose_tool():
-    
-    data=input("[?] which tool you want to use ?\n1.binwalk\n2.firmdyne\n>>")
-    if data == 1:
-        print("welcome to Binwalk .......\n")
-        binwalk_extractor(firm_name)
-    elif data =2:
-
-
 def get_info():
     if len(sys.argv) == 2:
         firm_name = sys.argv[1]
@@ -120,19 +110,21 @@ def final_run(image_id):
 
 def main():
     show_banner()
-    choose_tool()
+    
     firm_name, firm_brand = get_info()
-    #binwalk = binwalk_extractor(firm_name)
-    image_id = run_extractor(firm_name, firm_brand)
-   
-    if image_id == "":
-        print("[!] Something went wrong")
-    else:
-        arch = identify_arch(image_id)        
-        tar2db(image_id)
-        make_image(arch, image_id)        
-        setup_network(arch, image_id)        
-        final_run(image_id)
+    data = int(input("[?] which tool you want to use ?\n1.binwalk\n2.firmdyne\n>>"))
+    if data == 1:
+        binwalk_extractor(firm_name)
+    elif data == 2:    
+        image_id = run_extractor(firm_name, firm_brand)
+        if image_id == "":
+            print("[!] Something went wrong")
+        else:
+            arch = identify_arch(image_id)        
+            tar2db(image_id)
+            make_image(arch, image_id)        
+            setup_network(arch, image_id)        
+            final_run(image_id)
 
 
 if __name__ == "__main__":
