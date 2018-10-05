@@ -122,8 +122,9 @@ $ python firmo.py
 [?] Enter the name or absolute path of the firmware you want to analyse : Dlink_firmware.bin
 [?] Enter the brand of the firmware : Dlink
 [?] which tool you want to use ?
-1.binwalk
-2.firmdyne
+1.Binwalk
+2.Firmdyne
+3.Exit
 >> 1
 [+] Now going to extract the firmware. Hold on..
 
@@ -134,6 +135,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 160           0xA0            LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, uncompressed size: 2956312 bytes
 917600        0xE0060         PackImg section delimiter tag, little endian size: 7348736 bytes; big endian size: 2256896 bytes
 917632        0xE0080         Squashfs filesystem, little endian, non-standard signature, version 3.0, size: 2256151 bytes, 1119 inodes, blocksize: 65536 bytes, created: 2010-11-23 11:58:47
+>> do u wanna use another ?
 
 
 
