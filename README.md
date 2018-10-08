@@ -1,6 +1,7 @@
 # Firmo  
 
 Firmo is a toolkit built in order to help security researchers analyze and identify vulnerabilities in IoT and embedded device firmware. 
+Built on Python 3.6
 
 
 
@@ -8,6 +9,11 @@ Firmo is a toolkit built in order to help security researchers analyze and ident
 
 + As of now, it is simply a script to automate.
 currently under development, more tools are to be added soon...
+
+current tools embedded with Firmo are
+- Binwalk
+- Firmwalker
+- Firmadyne
 
 ---
 
@@ -78,6 +84,7 @@ Adjust the paths to firmadyne and binwalk in `firmo.py` and `reset.py`. Addition
 ```python
 # Configurations - change this according to your system
 firmadyne_path = "/home/ec/firmadyne"
+firmwalker_path = "/usr/local/bin/firmwalker.sh"
 binwalk_path = "/usr/local/bin/binwalk"
 root_pass = "root"
 firmadyne_pass = "firmadyne"
@@ -108,24 +115,27 @@ or
 $ python firmo.py 
 
 
-            ###### # #####  #    #  ####  
-            #      # #    # ##  ## #    # 
-            #####  # #    # # ## # #    # 
-            #      # #####  #    # #    # 
-            #      # #   #  #    # #    # 
-            #      # #    # #    #  ####                    
+                                    ###### # #####  #    #  ####  
+                                    #      # #    # ##  ## #    # 
+                                    #####  # #    # # ## # #    # 
+                                    #      # #####  #    # #    # 
+                                    #      # #   #  #    # #    # 
+                                    #      # #    # #    #  ####                    
                     
-                Welcome to the Firmware Analysis
-             http://husinul.github.io
-                  By Husinul Sanub
+                                    Welcome to the Firmware Exploitation Tools Kit 
+                                                v1.0
+                                    http://husinul.github.io 
+                                    By Husinul Sanub
 
-[?] Enter the name or absolute path of the firmware you want to analyse : Dlink_firmware.bin
-[?] Enter the brand of the firmware : Dlink
+
 [?] which tool you want to use ?
 1.Binwalk
 2.Firmdyne
-3.Exit
+3.Firmwalker
+4.Exit
 >> 1
+[?] Enter the name or absolute path of the firmware you want to analyse : Dlink_firmware.bin
+[?] Enter the brand of the firmware : Dlink
 [+] Now going to extract the firmware. Hold on..
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
@@ -135,7 +145,13 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 160           0xA0            LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, uncompressed size: 2956312 bytes
 917600        0xE0060         PackImg section delimiter tag, little endian size: 7348736 bytes; big endian size: 2256896 bytes
 917632        0xE0080         Squashfs filesystem, little endian, non-standard signature, version 3.0, size: 2256151 bytes, 1119 inodes, blocksize: 65536 bytes, created: 2010-11-23 11:58:47
->> do u wanna use another ?
 
+>> do u wanna use another tool ?
+
+[?] which tool you want to use ?
+1.Binwalk
+2.Firmdyne
+3.Firmwalker
+4.Exit
 
 
