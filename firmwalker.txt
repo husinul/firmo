@@ -1,3 +1,481 @@
 ***Firmware Directory***
-Dlink_firmware.bin
+_Dlink_firmware.bin.extracted
 ***Search for password files***
+##################################### passwd
+
+##################################### shadow
+
+##################################### *.psk
+
+***Search for Unix-MD5 hashes***
+
+
+***Search for SSL related files***
+##################################### *.crt
+
+##################################### *.pem
+
+##################################### *.cer
+
+##################################### *.p7b
+
+##################################### *.p12
+
+##################################### *.key
+
+
+***Search for SSH related files***
+##################################### authorized_keys
+
+##################################### *authorized_keys*
+
+##################################### host_key
+
+##################################### *host_key*
+
+##################################### id_rsa
+
+##################################### *id_rsa*
+
+##################################### id_dsa
+
+##################################### *id_dsa*
+
+##################################### *.pub
+
+
+***Search for files***
+##################################### *.conf
+d/squashfs-root/etc/resolv.conf
+d/squashfs-root/etc/netsniper/pers_isn.conf
+d/squashfs-root/etc/netsniper/pers.conf
+
+##################################### *.cfg
+
+##################################### *.ini
+
+
+***Search for database related files***
+##################################### *.db
+
+##################################### *.sqlite
+
+##################################### *.sqlite3
+
+
+***Search for shell scripts***
+##################################### shell scripts
+d/squashfs-root/etc/scripts/layout.sh
+d/squashfs-root/etc/scripts/startburning.sh
+d/squashfs-root/etc/scripts/dislan.sh
+d/squashfs-root/etc/scripts/ubcom-monitor.sh
+d/squashfs-root/etc/scripts/ubcom-run.sh
+d/squashfs-root/etc/scripts/enlan.sh
+d/squashfs-root/etc/scripts/system.sh
+d/squashfs-root/etc/scripts/final.sh
+d/squashfs-root/etc/scripts/config.sh
+d/squashfs-root/etc/scripts/freset_setnodes.sh
+d/squashfs-root/etc/scripts/misc/telnetd.sh
+d/squashfs-root/etc/scripts/misc/setwantype.sh
+d/squashfs-root/etc/scripts/misc/haltdemand.sh
+d/squashfs-root/etc/scripts/misc/preupgrade.sh
+d/squashfs-root/etc/scripts/misc/profile.sh
+d/squashfs-root/etc/scripts/misc/ver.sh
+d/squashfs-root/etc/scripts/misc/nreboot.sh
+d/squashfs-root/etc/scripts/misc/defnodes.sh
+d/squashfs-root/etc/scripts/misc/freset.sh
+d/squashfs-root/etc/templates/qos.sh
+d/squashfs-root/etc/templates/wan_ppp.sh
+d/squashfs-root/etc/templates/wlan.sh
+d/squashfs-root/etc/templates/ppp/starspeed.sh
+d/squashfs-root/etc/templates/ppp/pap_type.sh
+d/squashfs-root/etc/templates/ppp/pap_hack.sh
+d/squashfs-root/etc/templates/upnpd/NOTIFY.WANEthernetLinkConfig.1.sh
+d/squashfs-root/etc/templates/upnpd/NOTIFY.sh
+d/squashfs-root/etc/templates/upnpd/NOTIFY.WANIPConnection.1.sh
+d/squashfs-root/etc/templates/upnpd/NOTIFY.WANCommonInterfaceConfig.1.sh
+d/squashfs-root/etc/templates/upnpd/NOTIFY.WFAWLANConfig.1.sh
+d/squashfs-root/etc/templates/upnpd/M-SEARCH.sh
+d/squashfs-root/etc/templates/upnpd/NOTIFY.OSInfo.1.sh
+d/squashfs-root/etc/templates/upnpd/NOTIFY.Layer3Forwarding.1.sh
+d/squashfs-root/etc/templates/ntp.sh
+d/squashfs-root/etc/templates/wakeup.sh
+d/squashfs-root/etc/templates/gzone.sh
+d/squashfs-root/etc/templates/ledctrl.sh
+d/squashfs-root/etc/templates/wan.sh
+d/squashfs-root/etc/templates/dhcpd.sh
+d/squashfs-root/etc/templates/dnrd.sh
+d/squashfs-root/etc/templates/webs.sh
+d/squashfs-root/etc/templates/enable_gzone.sh
+d/squashfs-root/etc/templates/onlanchange.sh
+d/squashfs-root/etc/templates/modules.sh
+d/squashfs-root/etc/templates/lan.sh
+d/squashfs-root/etc/templates/trafficctrl.sh
+d/squashfs-root/etc/templates/lld2d.sh
+d/squashfs-root/etc/templates/wandown.sh
+d/squashfs-root/etc/templates/route.sh
+d/squashfs-root/etc/templates/lpd.sh
+d/squashfs-root/etc/templates/dyndns_test.sh
+d/squashfs-root/etc/templates/igmpproxy.sh
+d/squashfs-root/etc/templates/extensions/pp.sh
+d/squashfs-root/etc/templates/wanup.sh
+d/squashfs-root/etc/templates/wlan_schedule.sh
+d/squashfs-root/etc/templates/dnsmasq.sh
+d/squashfs-root/etc/templates/firmware.sh
+d/squashfs-root/etc/templates/upnpd.sh
+d/squashfs-root/etc/templates/dyndns.sh
+d/squashfs-root/etc/templates/igmpproxy_helper.sh
+d/squashfs-root/etc/templates/timezone.sh
+d/squashfs-root/etc/templates/rg.sh
+d/squashfs-root/etc/templates/wps.sh
+d/squashfs-root/etc/templates/logs.sh
+d/squashfs-root/etc/templates/wlan_resetcnt.sh
+d/squashfs-root/etc/templates/neaps.sh
+d/squashfs-root/etc/templates/scheduled.sh
+d/squashfs-root/etc/init.d/S03config.sh
+d/squashfs-root/etc/init.d/S30final.sh
+d/squashfs-root/etc/init.d/S10system.sh
+d/squashfs-root/etc/defnodes/S20upnp_igd.sh
+d/squashfs-root/etc/defnodes/S41setext.sh
+d/squashfs-root/etc/defnodes/S10setext.sh
+d/squashfs-root/etc/defnodes/S24widget.sh
+d/squashfs-root/etc/defnodes/S23langpack.sh
+d/squashfs-root/etc/defnodes/S30setnode.sh
+d/squashfs-root/etc/defnodes/S31setext.sh
+d/squashfs-root/etc/defnodes/S22setext.sh
+d/squashfs-root/etc/defnodes/S21upnp_wfa.sh
+
+***Search for other .bin files***
+##################################### bin files
+d/squashfs-root/etc/RT3050_AP_1T1R_V1_0.bin
+
+***Search for patterns in files***
+-------------------- upgrade --------------------
+d/squashfs-root/www/locale/en/sys_fw_valid.php
+d/squashfs-root/www/locale/en/help/h_tools_firmware.php
+d/squashfs-root/www/locale/en/tools_firmware.php
+d/squashfs-root/www/locale/en/dsc/dsc_sup_menu2.php
+d/squashfs-root/www/locale/en/dsc/dsc_spt_tools.php
+d/squashfs-root/www/locale/en/dsc/dsc_tools_firmware.php
+d/squashfs-root/www/locale/en/dsc/dsc_tools_firmware_fw_upgrade.php
+
+-------------------- admin --------------------
+d/squashfs-root/lib/iptables/libipt_REJECT.so
+d/squashfs-root/sbin/syslogd
+d/squashfs-root/sbin/httpd
+d/squashfs-root/etc/templates/hnap/SetDeviceSettings2.php
+d/squashfs-root/www/locale/en/permission.php
+d/squashfs-root/www/locale/en/dsc/dsc_tools_log_setting.php
+d/squashfs-root/www/locale/en/dsc/dsc_spt_tools.php
+d/squashfs-root/www/locale/en/dsc/dsc_tools_admin.php
+d/squashfs-root/www/locale/en/tools_admin.php
+d/squashfs-root/www/locale/en/st_route.php
+d/squashfs-root/www/locale/en/st_stats.php
+d/squashfs-root/www/tools_admin.php
+
+-------------------- root --------------------
+d/squashfs-root/lib/modules/sw_tcpip.ko
+d/squashfs-root/usr/sbin/xmldb
+d/squashfs-root/usr/sbin/dnrd
+d/squashfs-root/usr/sbin/pppd
+d/squashfs-root/usr/sbin/iptables-save
+d/squashfs-root/usr/sbin/iptables-restore
+d/squashfs-root/usr/sbin/nsbbox
+d/squashfs-root/usr/sbin/tc
+d/squashfs-root/usr/sbin/lld2d
+d/squashfs-root/usr/sbin/wps
+d/squashfs-root/usr/sbin/upnpkits
+d/squashfs-root/usr/sbin/iptables
+d/squashfs-root/usr/sbin/ip
+d/squashfs-root/etc/templates/upnpd/NOTIFY.WANEthernetLinkConfig.1.sh
+d/squashfs-root/etc/templates/upnpd/run.M-SEARCH.uuid.php
+d/squashfs-root/etc/templates/upnpd/run.M-SEARCH.devices.php
+d/squashfs-root/etc/templates/upnpd/run.M-SEARCH.services.php
+d/squashfs-root/etc/templates/upnpd/NOTIFY.WANIPConnection.1.sh
+d/squashfs-root/etc/templates/upnpd/__M-SEARCH.common.php
+d/squashfs-root/etc/templates/upnpd/NOTIFY.WANCommonInterfaceConfig.1.sh
+d/squashfs-root/etc/templates/upnpd/setup.php
+d/squashfs-root/etc/templates/upnpd/ACTION.WANEthLinkC1.php
+d/squashfs-root/etc/templates/upnpd/NOTIFY.WFAWLANConfig.1.sh
+d/squashfs-root/etc/templates/upnpd/ACTION.OSInfo1.php
+d/squashfs-root/etc/templates/upnpd/ACTION.WFAWLANConfig1.php
+d/squashfs-root/etc/templates/upnpd/ACTION.WANCommonIFC1.php
+d/squashfs-root/etc/templates/upnpd/ACTION.WANIPConn1.php
+d/squashfs-root/etc/templates/upnpd/run.M-SEARCH.ssdpall.php
+d/squashfs-root/etc/templates/upnpd/NOTIFY.Layer3Forwarding.1.php
+d/squashfs-root/etc/templates/upnpd/__NOTIFY.common.php
+d/squashfs-root/etc/templates/upnpd/__NOTIFY.alivebye.php
+d/squashfs-root/etc/templates/upnpd/run.M-SEARCH.rootdevice.php
+d/squashfs-root/etc/templates/upnpd/NOTIFY.OSInfo.1.sh
+d/squashfs-root/etc/templates/upnpd/NOTIFY.Layer3Forwarding.1.sh
+d/squashfs-root/etc/templates/upnpd/ACTION.L3Forwarding1.php
+d/squashfs-root/etc/templates/upnpd/__ACTION.GetDefaultConnectionService.php
+d/squashfs-root/etc/templates/wifi/wps.config.php
+d/squashfs-root/etc/templates/extensions/qos_run.php
+d/squashfs-root/etc/defnodes/S20upnp_igd.sh
+d/squashfs-root/etc/defnodes/S21upnp_wfa.sh
+d/squashfs-root/www/widget/misc_config.xml
+d/squashfs-root/bin/busybox
+d/squashfs-root/htdocs/web/upnp/InternetGatewayDevice.xml
+d/squashfs-root/htdocs/web/upnp/WFADevice.xml
+d/squashfs-root/htdocs/upnp/L3Forwarding1.upnp
+d/squashfs-root/htdocs/upnp/WANIPConn1.upnp
+d/squashfs-root/htdocs/upnp/WANEthLinkC1.upnp
+d/squashfs-root/htdocs/upnp/OSInfo1.upnp
+d/squashfs-root/htdocs/upnp/WANCommonIFC1.upnp
+d/squashfs-root/htdocs/upnp/WFAWLANConfig1.upnp
+
+-------------------- password --------------------
+d/squashfs-root/lib/libc.so.0
+d/squashfs-root/lib/modules/rt2860v2_ap.ko
+d/squashfs-root/usr/sbin/neaps
+d/squashfs-root/usr/sbin/peanut
+d/squashfs-root/usr/sbin/sendmail
+d/squashfs-root/usr/sbin/widget
+d/squashfs-root/usr/sbin/telnetd
+d/squashfs-root/usr/sbin/pppd
+d/squashfs-root/usr/sbin/starspeed
+d/squashfs-root/usr/sbin/hostapd
+d/squashfs-root/usr/sbin/rgbin
+d/squashfs-root/usr/sbin/wps
+d/squashfs-root/usr/sbin/submit
+d/squashfs-root/usr/sbin/dyndns
+d/squashfs-root/usr/sbin/syslog
+d/squashfs-root/sbin/atp
+d/squashfs-root/etc/tlogs/sysact.tmp
+d/squashfs-root/etc/templates/neaps/neaps_conf.php
+d/squashfs-root/etc/templates/ppp/starspeed.sh
+d/squashfs-root/etc/templates/ppp/pap_hack.sh
+d/squashfs-root/etc/templates/wan_ppp_run.php
+d/squashfs-root/etc/templates/webs.sh
+d/squashfs-root/etc/templates/wan_pppoe.php
+d/squashfs-root/etc/templates/hnap/SetWanSettings.php
+d/squashfs-root/etc/templates/hnap/SetDeviceSettings.php
+d/squashfs-root/etc/templates/hnap/GetWanSettings.php
+d/squashfs-root/etc/templates/wan_dhcp.php
+d/squashfs-root/etc/templates/wan_static.php
+d/squashfs-root/etc/templates/httpd/hnapasswd.php
+d/squashfs-root/etc/templates/httpd/httpasswd.php
+d/squashfs-root/etc/templates/wan_ppp3g.php
+d/squashfs-root/etc/templates/wan_ip_setup.php
+d/squashfs-root/etc/templates/misc/firmware_run.php
+d/squashfs-root/etc/templates/misc/dyndns_run.php
+d/squashfs-root/etc/templates/misc/dyndns_test_run.php
+d/squashfs-root/etc/templates/wan_dhcpplus.php
+d/squashfs-root/etc/defnodes/S31setext.sh
+d/squashfs-root/www/wiz_wan_4_l2tp.php
+d/squashfs-root/www/model/__g_var.php
+d/squashfs-root/www/locale/en/wiz_wan_4_l2tp.php
+d/squashfs-root/www/locale/en/tools_log_setting.php
+d/squashfs-root/www/locale/en/log/sysact.tmp
+d/squashfs-root/www/locale/en/help/h_tools_admin.php
+d/squashfs-root/www/locale/en/easy_setup_internet.php
+d/squashfs-root/www/locale/en/wiz_wlan_2_wep.php
+d/squashfs-root/www/locale/en/tools_ddns.php
+d/squashfs-root/www/locale/en/wiz_wan_4_pptp.php
+d/squashfs-root/www/locale/en/login.php
+d/squashfs-root/www/locale/en/wiz_wan_4_pppoe.php
+d/squashfs-root/www/locale/en/wiz_wan_3_sel_wan.php
+d/squashfs-root/www/locale/en/login_fail.php
+d/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_4_pptp.php
+d/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_4_l2tp.php
+d/squashfs-root/www/locale/en/dsc/dsc_wiz_wlan_2_wpa.php
+d/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_0_flowchart.php
+d/squashfs-root/www/locale/en/dsc/dsc_wiz_wlan_0_flowchart.php
+d/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_1_password.php
+d/squashfs-root/www/locale/en/dsc/dsc_spt_tools.php
+d/squashfs-root/www/locale/en/dsc/dsc_wiz_wlan_2_wep.php
+d/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_4_pppoe.php
+d/squashfs-root/www/locale/en/dsc/dsc_tools_admin.php
+d/squashfs-root/www/locale/en/dsc/dsc_spt_bsc.php
+d/squashfs-root/www/locale/en/msg_comm.php
+d/squashfs-root/www/locale/en/bsc_wan.php
+d/squashfs-root/www/locale/en/wiz_wlan_2_wpa.php
+d/squashfs-root/www/locale/en/tools_admin.php
+d/squashfs-root/www/locale/en/msg_wiz_wlan_0_flowchart.php
+d/squashfs-root/www/locale/en/wiz_wan_1_password.php
+d/squashfs-root/www/widget/ddns.xml
+d/squashfs-root/www/widget/wan_stats.xml
+d/squashfs-root/www/tools_log_setting.php
+d/squashfs-root/www/__wiz_wan_action.php
+d/squashfs-root/www/post_login.xml
+d/squashfs-root/www/easy_setup_current.php
+d/squashfs-root/www/__easy_setup_var.php
+d/squashfs-root/www/easy_setup_internet.php
+d/squashfs-root/www/tools_ddns.php
+d/squashfs-root/www/wiz_wan_4_pptp.php
+d/squashfs-root/www/easy_setup.php
+d/squashfs-root/www/login.php
+d/squashfs-root/www/wiz_wan_4_pppoe.php
+d/squashfs-root/www/bsc_wan.php
+d/squashfs-root/www/tools_admin.php
+d/squashfs-root/www/__easy_setup_action.php
+d/squashfs-root/www/wiz_wan.php
+d/squashfs-root/www/easy_setup_complete.php
+d/squashfs-root/www/wiz_wan_1_password.php
+d/squashfs-root/www/widgetV1.11/system_log.xml
+d/squashfs-root/www/widgetV1.11/ddns.xml
+d/squashfs-root/www/widgetV1.11/wan_stats.xml
+d/squashfs-root/www/auth/__authenticate_p.php
+d/squashfs-root/www/auth/__login.php
+d/squashfs-root/www/bsc_wlan.php
+
+-------------------- passwd --------------------
+d/squashfs-root/lib/libc.so.0
+d/squashfs-root/usr/sbin/pppd
+d/squashfs-root/sbin/atp
+d/squashfs-root/www/auth/__authenticate_p.php
+d/squashfs-root/bin/busybox
+
+-------------------- pwd --------------------
+d/A0.7z
+d/squashfs-root/lib/libc.so.0
+d/squashfs-root/lib/modules/sw_tcpip.ko
+d/squashfs-root/usr/sbin/dyndns
+d/squashfs-root/bin/busybox
+
+-------------------- dropbear --------------------
+
+-------------------- ssl --------------------
+d/squashfs-root/usr/sbin/wps
+d/squashfs-root/etc/templates/hnap/GetDeviceSettings2.php
+
+-------------------- private key --------------------
+d/squashfs-root/usr/sbin/wps
+
+-------------------- telnet --------------------
+d/squashfs-root/etc/scripts/system.sh
+d/squashfs-root/www/__adv_port.php
+
+-------------------- secret --------------------
+d/squashfs-root/usr/sbin/neaps
+d/squashfs-root/usr/sbin/pppd
+d/squashfs-root/usr/sbin/hostapd
+d/squashfs-root/etc/templates/neaps/neaps_conf.php
+d/squashfs-root/etc/templates/ppp/ppp_setup.php
+d/squashfs-root/etc/templates/hnap/GetWLanSecurity.php
+d/squashfs-root/etc/templates/hnap/SetWLanSecurity.php
+d/squashfs-root/etc/templates/hnap/SetWLanRadioSecurity.php
+d/squashfs-root/etc/templates/hnap/GetWLanRadioSecurity.php
+d/squashfs-root/etc/templates/wifi/hostapd_used.php
+d/squashfs-root/etc/templates/wifi/RT2860.php
+d/squashfs-root/www/locale/en/dsc/dsc_spt_bsc.php
+d/squashfs-root/www/locale/en/bsc_wlan.php
+d/squashfs-root/www/__wiz_wlan_action.php
+d/squashfs-root/www/easy_setup_current.php
+d/squashfs-root/www/wiz_wlan_2_wep.php
+d/squashfs-root/www/wiz_wlan_2_wpa.php
+d/squashfs-root/www/widgetV1.11/wlan_stats.xml
+d/squashfs-root/www/bsc_wlan.php
+
+-------------------- pgp --------------------
+d/A0.7z
+d/E0080.squashfs
+
+-------------------- gpg --------------------
+d/A0.7z
+
+-------------------- token --------------------
+d/squashfs-root/lib/iptables/libipt_PERS.so
+d/squashfs-root/usr/sbin/sendmail
+d/squashfs-root/usr/sbin/pppd
+d/squashfs-root/usr/sbin/hostapd
+d/squashfs-root/usr/sbin/wps
+d/squashfs-root/sbin/httpd
+d/squashfs-root/bin/busybox
+
+-------------------- api key --------------------
+
+-------------------- oauth --------------------
+
+
+***Search for web servers***
+##################################### search for web servers
+##################################### apache
+
+##################################### lighttpd
+
+##################################### alphapd
+
+##################################### httpd
+d/squashfs-root/sbin/httpd
+d/squashfs-root/etc/templates/httpd
+
+
+***Search for important binaries***
+##################################### important binaries
+##################################### ssh
+
+##################################### sshd
+
+##################################### scp
+
+##################################### sftp
+
+##################################### tftp
+
+##################################### dropbear
+
+##################################### busybox
+d/squashfs-root/bin/busybox
+
+##################################### telnet
+
+##################################### telnetd
+d/squashfs-root/usr/sbin/telnetd
+
+##################################### openssl
+
+
+***Search for ip addresses***
+##################################### ip addresses
+0.0.0.0
+10.0.0.138
+10.0.0.2
+10.0.0.212
+10.112.112.112
+10.112.112.113
+10.112.112.114
+1.112.112.133
+127.0.0.1
+1.5.0.0
+192.167.0.1
+192.167.0.222
+192.168.0.1
+192.168.0.100
+192.168.0.199
+192.168.0.222
+192.168.0.50
+192.168.10.1
+192.168.10.222
+192.168.1.1
+192.168.1.5
+204.194.232.200
+204.194.234.200
+224.0.0.1
+239.0.0.0
+239.255.255.250
+255.0.0.0
+255.255.0.0
+255.255.255.0
+255.255.255.255
+4.2.3.2
+
+***Search for urls***
+##################################### urls
+http://<?=$ipaddr?>
+http://<?=$ipaddr?><
+http://<?=$ipaddr?>:<?=$port?><
+http://pajhome.org.uk
+http://purenetworks.com
+http://schemas.xmlsoap.org
+http://shopping.msn.com
+http://shopping.yahoo.com
+https://www.grc.com
+http://www.DLinkDDNS.com
+http://www.w3.org
+http://x.x.x.x:8080 whereas x.x.x.x is the
+
+***Search for emails***
+##################################### emails
+david_hsieh@alphanetworks.com

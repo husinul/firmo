@@ -18,15 +18,16 @@ firmadyne_pass = "firmadyne"
 def show_banner():
     print( """
                               
-            ###### # #####  #    #  ####  
-            #      # #    # ##  ## #    # 
-            #####  # #    # # ## # #    # 
-            #      # #####  #    # #    # 
-            #      # #   #  #    # #    # 
-            #      # #    # #    #  ####                    
+                            ###### # #####  #    #  ####  
+                            #      # #    # ##  ## #    # 
+                            #####  # #    # # ## # #    # 
+                            #      # #####  #    # #    # 
+                            #      # #   #  #    # #    # 
+                            #      # #    # #    #  ####                    
                     
-                Welcome to the Firmware Analysis
-             http://husinul.github.io
+                Welcome to the Firmware Exploitation Tools Kit 
+                            v1.0
+                    http://husinul.github.io
                   By Husinul Sanub
     """)
 
@@ -45,6 +46,7 @@ def binwalk_extractor(firm_name):
     os.system("binwalk"+'\t'+firm_name)
 
 def firmwalker():
+        
         firm_extracted = input('Enter the Extracted firmware:')
         os.system("firmwalker.sh"+'\t'+firm_extracted )
 
@@ -115,19 +117,26 @@ def final_run(image_id):
 def main():
     show_banner()
     
-    firm_name, firm_brand = get_info()
+    #firm_name, firm_brand = get_info()
     while True:
-        data = int(input("[?] which tool you want to\n1.Binwalk\n2.Firmdyne\n3.Firmwalker\n4.Exit\n>>"))
+        data = int(input("\n[?] which tool you want to use \n1.Binwalk\n2.Firmdyne\n3.Firmwalker\n4.Exit\n>>"))
         
         try:
             if data == 1:
-                binwalk_extractor(firm_name)
-                d=input('>> do u wanna use another tool ?')
+
+                if not os.path.isfile(binwalk_path):
+                    print("\n*******************\n" + binwalk_path + "\n" + "This Location does not exist or Module is not installed\n")
+                else:
+                    firm_name,firm_brand = get_info()    
+                    binwalk_extractor(firm_name)
+                    d=input('>> do u wanna use another tool ?')
+                    
             
             elif data == 2:
                 if not os.path.isfile(firmadyne_path):
-                    print("\n*******************\n" + firmadyne_path + "\n" + "This Location does not exist\n")
+                    print("\n*******************\n" + firmadyne_path + "\n" + "This Location does not exist or Module is not installed\n")
                 else:
+                    get_info()
                     image_id = run_extractor(firm_name, firm_brand)
 
                     if image_id == "":
@@ -140,17 +149,20 @@ def main():
                         final_run(image_id)
             
             elif data ==3:
-                firmwalker()
-                d =input('>> do u wanna use another')
+                 if not os.path.isfile(firmwalker_path):
+                    print("\n*******************\n" + firmwalker_path + "\n" + "This Location does not exist or Module is not installed\n")
+                 else:   
+                    firmwalker()
+                    d =input('>> do u wanna use another tool ?')
 
             elif data ==4:
-                print("Thank you !!!") 
+                print("\n\nThank you !!!") 
                 break   
             else:
                 raise  ValueError()       
         
         except ValueError:
-            print("Oops!  That was no valid number.  Try again...")
+            print("\nOops!  That was no valid number.  Try again...\n")
             
             
 
